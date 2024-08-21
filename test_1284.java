@@ -3,7 +3,6 @@ package swea;
 import java.util.Scanner;
 
 public class test_1284 {
-
 	public static void main(String args[]) throws Exception
 	{
 		Scanner sc = new Scanner(System.in);
@@ -20,12 +19,13 @@ public class test_1284 {
 			if(W <= R) {
 				answer = Q > P*W ? P*W:Q;
 			}
+			
 			else {
 				int b = Q + (W-R) * S;
 				answer = P*W > b ? b : P*W;
 			}
+			
 			System.out.println("#" + t + " "  + answer);
 		}
 	}
-
 }
